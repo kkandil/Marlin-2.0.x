@@ -54,7 +54,7 @@
 //  3.3V max when defined as an analog input
 //
 #ifndef TEMP_0_PIN
-  #define TEMP_0_PIN       P0_24_A1   // A1 (T1) - (68) - TEMP_0_PIN
+  #define TEMP_0_PIN       P0_26_A3 //P0_24_A1   // A1 (T1) - (68) - TEMP_0_PIN
 #endif
 #ifndef TEMP_1_PIN
   #define TEMP_1_PIN       P0_25_A2   // A2 (T2) - (69) - TEMP_1_PIN
@@ -64,7 +64,7 @@
 #endif
 
 #if HOTENDS == 1 && TEMP_SENSOR_PROBE
-  #define TEMP_PROBE_PIN   TEMP_1_PIN
+  #define TEMP_PROBE_PIN   TEMP_0_PIN
 #endif
 
 //
